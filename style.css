@@ -1,0 +1,228 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* share style */
+
+* {
+      font-family: "Work Sans", sans-serif;
+}
+.text-gray{
+        color: #727272;
+    }
+    
+
+.btn-primary{
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+/* header style */
+header{
+    background-color: papayawhip;
+    padding: 50px 230px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+/* Benner style */
+.benner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.benner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.benner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* style MAIN */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams style */
+.team-content{
+    display: flex;
+    align-items: center;
+}
+.team-pic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.team-dis{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.team-title{
+    font-size: 2.8rem;
+}
+.team-title .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .text-fea{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* feature section style */
+.feature{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.feature .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-contant .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.feature-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+
+
+/* facts Secssion */
+
+.facts-container{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+
+}
+.facts-container .card{
+ border-radius: 8px;
+ border: 1px solid salmon;
+ text-align: center;
+ padding:  30px;
+}
+
+.facts-container .facts-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.facts-container .facts-num{
+    font-size: 2.6rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* sponsors style */
+
+.sponsor{
+    text-align: center;
+}
+.sponsor-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+
+}
+.sponsor-img img{
+    width: 165px;
+}
+/* RESPOCESIVE SECSSION */
+/* Benner style responsive */
+/* For mobile */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav,.team-content,.facts-container,.sponsor-img,.feature
+    {
+        flex-direction: column;
+    }
+    .feature-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .ten-years{
+        position: static;
+        max-width: 300px;
+    }
+    .team-pic{
+        grid-template-columns: 1fr;
+    }
+    .team-dis,.facts-container{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .facts-container{
+        gap: 20px;
+    }
+    
+}
+/* for medium device or tablet */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav,.team-content,
+    .sponsor-img , .feature
+    {
+        flex-direction: column;
+    }
+}
